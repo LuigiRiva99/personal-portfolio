@@ -7,12 +7,19 @@
             </div>
             <div class="description p-4 text-center">
                 <p>Hello i'm</p>
-                <h1>Luigi Riva</h1>
+                <h1 class="title">Luigi Riva</h1>
                 <p>Jr web developer</p>
                 <div class="btn-container">
                     <button class="btn btn-link"><a href="https://www.linkedin.com/in/luigi-antony-riva/" target="_blank"><img src="../assets/linkedin.png"></img></a></button>
                     <button class="btn btn-link"><a href="https://github.com/LuigiRiva99" target="_blank"><img src="../assets/github.png"></img></a></button>
-                    <button class="btn btn-link"><a href="/public/LUIGI ANTONY RIVA CV INV.pdf" target="_blank">CV</a></button>
+                    <button class="btn btn-link">
+                        <a href="/public/LUIGI ANTONY RIVA CV INV.pdf" target="_blank" >
+                            <div class="cv-content">
+                                <img src="../assets/CV-icon.png" class="cv-icon" alt="CV Icon">
+                                <span class="cv-text">CV</span>
+                            </div>
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -44,43 +51,43 @@
                         </div>
                         <div class="row flex-wrap">
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-html.png" alt="">
                                 <h3 class=" m-0">HTML</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-css.png" alt="">
                                 <h3 class=" m-0">CSS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-sass.png" alt="">
                                 <h3 class=" m-0">SASS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-bootstrap.png" alt="">
                                 <h3 class=" m-0">Bootstrap</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-js.png" alt="">
                                 <h3 class=" m-0">JS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-vue.png" alt="">
                                 <h3 class=" m-0">Vue JS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-vite.png" alt="">
                                 <h3 class=" m-0">Vite</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-php.png" alt="">
                                 <h3 class=" m-0">PHP</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-laravel.png" alt="">
                                 <h3 class=" m-0">Laravel</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/experience.png" alt="">
+                                <img class="icon" src="../assets/icon-mysql.png" alt="">
                                 <h3 class=" m-0">MySQL</h3>
                             </div>
                         </div>
@@ -93,7 +100,7 @@
     <!-- sezione projects -->
      <section class="projects" id="projects">
         <div class="text-center">
-            <h1>Projects</h1>
+            <h2 class="mb-5">Projects</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-4">
@@ -125,7 +132,7 @@
     <!-- sezione contacts -->
     <section class="contacts" id="contacts">
         <div class="text-center">
-            <h1 class="title">Contacts</h1>
+            <h2>Contacts</h2>
             <div class="d-flex justify-content-center">
                 <div class="contact-info-container ">
                     <img
@@ -162,8 +169,18 @@
 </script>
 
 <style lang="scss" scoped>
+
+    .title{
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
     .pic-container{
-        height: 400px;
+        height: 350px;
         // width: 500px;
         aspect-ratio: 1/1;
         border-radius: 50%;
@@ -190,10 +207,54 @@
     .btn {
         font-weight: 600;
         transition: all 300ms ease;
-        padding: 1rem;
-        width: 8rem;
-        border-radius: 2rem;
+        border-radius: 50%;
+        padding: 0;
+        height: 60px;
+        margin: 20px;
+        
+        .cv-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .cv-icon {
+                height: 60px;
+                transition: opacity 0.3s ease;
+            }
+
+            .img{
+                display: block;
+                border: 2px solid black;
+                width: 100%;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+            }
+
+            .cv-text {
+                position: absolute;
+                display: none;
+                font-size: 1rem;
+                font-weight: bold;
+                color: black;
+                transition: opacity 0.3s ease;
+            }
+        }
+
+        &:hover {
+            .cv-icon {
+                opacity: 0;
+            }
+
+            .cv-text {
+                display: block;
+                opacity: 1;
+            }
+        }
     }
+
+
 
     .icon{
         height: 40px;
@@ -219,8 +280,17 @@
     }
 
     .projects{
+
+        margin-top: 150px;
+
         .btn{
             border: 2px solid grey;
+            height: 60px;
+            aspect-ratio: 1/1;
+            
+            a{
+                padding: 1px;
+            }
 
             &:hover{
                 border: 2px solid black;
