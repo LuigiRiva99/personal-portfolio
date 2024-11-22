@@ -1,6 +1,6 @@
 <template>
     <!-- sezione profilo -->
-    <section class="profile">
+    <section class="profile" id="profile">
         <div class="d-flex justify-content-center align-items-center">
             <div class="pic-container">
                 <img src="../assets/Foto cv.jpg" alt="Luigi Riva Foto">
@@ -10,16 +10,16 @@
                 <h1>Luigi Riva</h1>
                 <p>Jr web developer</p>
                 <div class="btn-container">
-                    <button class="btn"><a href="https://www.linkedin.com/in/luigi-antony-riva/" target="_blank"><img src="../assets/linkedin.png"></img></a></button>
-                    <button class="btn"><a href="https://github.com/LuigiRiva99" target="_blank"><img src="../assets/github.png"></img></a></button>
-                    <button class="btn"><a href="/public/LUIGI ANTONY RIVA CV INV.pdf" target="_blank">CV</a></button>
+                    <button class="btn btn-link"><a href="https://www.linkedin.com/in/luigi-antony-riva/" target="_blank"><img src="../assets/linkedin.png"></img></a></button>
+                    <button class="btn btn-link"><a href="https://github.com/LuigiRiva99" target="_blank"><img src="../assets/github.png"></img></a></button>
+                    <button class="btn btn-link"><a href="/public/LUIGI ANTONY RIVA CV INV.pdf" target="_blank">CV</a></button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- sezione about -->
-     <section class="about">
+     <section class="about" id="about">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <h2 class="mb-5">About Me</h2>
@@ -89,6 +89,65 @@
             </div>
         </div>
      </section>
+
+    <!-- sezione projects -->
+     <section class="projects" id="projects">
+        <div class="text-center">
+            <h1>Projects</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="project-container">
+                            <img class="project" src="../assets/boolflix.png" alt="">
+                            <h3 class="pb-3">Boolflix</h3>
+                            <button class="btn"><a href="" target="_blank">Go</a></button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project-container">
+                            <img class="project" src="../assets/deliveboo.png" alt="">
+                            <h3 class="pb-3">Deliveboo</h3>
+                            <button class="btn"><a href="" target="_blank">Go</a></button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project-container">
+                            <img class="project" src="../assets/project-1.png" alt="">
+                            <h3 class="pb-3">Pokedex</h3>
+                            <button class="btn"><a href="" target="_blank">Go</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- sezione contacts -->
+    <section class="contacts" id="contacts">
+        <div class="text-center">
+            <h1 class="title">Contacts</h1>
+            <div class="d-flex justify-content-center">
+                <div class="contact-info-container ">
+                    <img
+                        src="../assets/mail.png"
+                        alt="Email icon"
+                        class="contact-icon-mail"
+                    />
+                    <p><a href="mailto:examplemail@gmail.com">luigi.riva.1999@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container ps-5">
+                    <a href="https://www.linkedin.com" class="contact-link">
+                        <img
+                            src="../assets/linkedin.png"
+                            alt="LinkedIn icon"
+                            class="contact-icon"
+                        />
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -123,9 +182,17 @@
         margin-top: 100px;
     }
 
-    .btn{
+    .btn-link{
         height: 100px;
         aspect-ratio: 1/1;
+    }
+
+    .btn {
+        font-weight: 600;
+        transition: all 300ms ease;
+        padding: 1rem;
+        width: 8rem;
+        border-radius: 2rem;
     }
 
     .icon{
@@ -149,5 +216,59 @@
         border: 1px solid rgb(85, 85, 85);
         border-radius: 50px;
         padding: 30px;
+    }
+
+    .projects{
+        .btn{
+            border: 2px solid grey;
+
+            &:hover{
+                border: 2px solid black;
+            }
+        }
+
+        .project-container{
+            border: 1px solid rgb(85, 85, 85);
+            border-radius: 50px;
+            padding: 20px;
+            height: 600px;
+
+            img{
+                width: 100%; 
+                height: 300px; 
+                object-fit: cover; 
+                border-radius: 15% 15% 0% 0%;
+                margin-bottom: 30px;
+            }
+
+            // .project1{
+            //     img{
+                    
+            //     }
+            // }
+        }
+    }
+
+    .contacts{
+        .contact-icon{
+            height: 50px;
+            aspect-ratio: 1/1;
+        }
+
+        // .contact-icon-mail{
+        //     height: 60px;
+        //     aspect-ratio: 1/1;
+        // }
+
+        .contact-link{
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 8px;
+
+                p{
+                    color: black;
+                }
+            }
+        }
     }
 </style>
