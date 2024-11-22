@@ -1,0 +1,11 @@
+ @use './reset.scss';
+ 
+p{
+	color: rgb(85,85,85);
+}
+
+a, .btn {
+	// transition: all 3000ms ease;
+	color: rgb(85,85,85);
+	text-decoration: none;
+}
