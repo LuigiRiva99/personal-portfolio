@@ -36,10 +36,15 @@
                         <h3 class=" m-0">Education</h3>
                     </div>
                     <div class="boolean-container d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center">   
-                            <img class="icon" src="../assets/education.png" alt="">
-                            <h3 class=" m-0">JR Full Stack Developer Trainee</h3>
-                        </div>
+                        <a href="/src/assets/certificato-boolean.png" target="_blank">
+                            <div class="d-flex align-items-center justify-content-center flex-column certificate-link">   
+                                <!-- <img class="icon" src="../assets/education.png" alt=""> -->
+                                <h3 class=" m-0 mb-3"><strong>JR Full Stack Developer Trainee</strong></h3>
+                                <img src="../assets/boolean-icon.png" alt="">
+                                <h4 class="boolean">BOOLEAN</h4>
+                                <span>Vedi certificato</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-8">
@@ -107,21 +112,21 @@
                         <div class="project-container">
                             <img class="project" src="../assets/boolflix.png" alt="">
                             <h3 class="pb-3">Boolflix</h3>
-                            <button class="btn"><a href="" target="_blank">Go</a></button>
+                            <button class="btn"><a href="https://boolflixriva.netlify.app" target="_blank">See project</a></button>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project-container">
-                            <img class="project" src="../assets/deliveboo.png" alt="">
-                            <h3 class="pb-3">Deliveboo</h3>
-                            <button class="btn"><a href="" target="_blank">Go</a></button>
+                            <img class="project" src="../assets/phlox.png" alt="">
+                            <h3 class="pb-3">Phlox business</h3>
+                            <button class="btn"><a href="https://phloxbusiness.netlify.app/" target="_blank">See project</a></button>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project-container">
-                            <img class="project" src="../assets/project-1.png" alt="">
+                            <img class="project" src="../assets/vue-pokedex.png" alt="">
                             <h3 class="pb-3">Pokedex</h3>
-                            <button class="btn"><a href="" target="_blank">Go</a></button>
+                            <button class="btn"><a href="https://pokedexriva.netlify.app" target="_blank">See project</a></button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +137,7 @@
     <!-- sezione contacts -->
     <section class="contacts" id="contacts">
         <div class="text-center">
-            <h2>Contacts</h2>
+            <h2 class="mb-5">Contacts</h2>
             <div class="d-flex justify-content-center">
                 <div class="contact-info-container ">
                     <img
@@ -271,6 +276,22 @@
     }
     .boolean-container{
         height: 100%;
+
+        .certificate-link {
+            padding: 20px;
+            &:hover{
+                background-color: rgba(85, 85, 85, 0.06);
+                border: 2px solid rgba(85, 85, 85, 0.272);
+                border-radius: 20px;
+            }
+        }
+        img{
+            height: 50px;
+        }
+
+        .boolean{
+            color: green;
+        }
     }
 
     .experience-container{
@@ -286,7 +307,8 @@
         .btn{
             border: 2px solid grey;
             height: 60px;
-            aspect-ratio: 1/1;
+            border-radius: 25px;
+            padding: 0px 20px;
             
             a{
                 padding: 1px;
@@ -307,7 +329,7 @@
                 width: 100%; 
                 height: 300px; 
                 object-fit: cover; 
-                border-radius: 15% 15% 0% 0%;
+                border-radius: 15%;
                 margin-bottom: 30px;
             }
 
@@ -320,6 +342,7 @@
     }
 
     .contacts{
+        margin-top: 100px;
         .contact-icon{
             height: 50px;
             aspect-ratio: 1/1;
