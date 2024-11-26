@@ -3,19 +3,19 @@
     <section class="profile" id="profile">
         <div class="d-flex justify-content-center align-items-center">
             <div class="pic-container">
-                <img src="../assets/Foto cv.jpg" alt="Luigi Riva Foto">
+                <img src="/public/assets/Foto cv.png" alt="Luigi Riva Foto">
             </div>
             <div class="description p-4 text-center">
                 <p>Hello i'm</p>
                 <h1 class="title">Luigi Riva</h1>
                 <p>Jr web developer</p>
                 <div class="btn-container">
-                    <button class="btn btn-link"><a href="https://www.linkedin.com/in/luigi-antony-riva/" target="_blank"><img src="../assets/linkedin.png"></img></a></button>
-                    <button class="btn btn-link"><a href="https://github.com/LuigiRiva99" target="_blank"><img src="../assets/github.png"></img></a></button>
+                    <button class="btn btn-link"><a href="https://www.linkedin.com/in/luigi-antony-riva/" target="_blank"><img src="/public/assets/linkedin.png"></img></a></button>
+                    <button class="btn btn-link"><a href="https://github.com/LuigiRiva99" target="_blank"><img src="/public/assets/github.png"></img></a></button>
                     <button class="btn btn-link">
                         <a href="/public/LUIGI ANTONY RIVA CV INV.pdf" target="_blank" >
                             <div class="cv-content">
-                                <img src="../assets/CV-icon.png" class="cv-icon" alt="CV Icon">
+                                <img src="/public/assets/CV-icon.png" class="cv-icon" alt="CV Icon">
                                 <span class="cv-text">CV</span>
                             </div>
                         </a>
@@ -32,15 +32,15 @@
                 <h2 class="mb-5">About Me</h2>
                 <div class="col-4 education-container">
                     <div class="d-flex align-items-center justify-content-center">
-                        <img class="icon" src="../assets/education.png" alt="">
+                        <img class="icon" src="/public/assets/education.png" alt="">
                         <h3 class=" m-0">Education</h3>
                     </div>
                     <div class="boolean-container d-flex align-items-center">
-                        <a href="/src/assets/certificato-boolean.png" target="_blank">
+                        <a href="/public/assets/certificato-boolean.png" target="_blank">
                             <div class="d-flex align-items-center justify-content-center flex-column certificate-link">   
-                                <!-- <img class="icon" src="../assets/education.png" alt=""> -->
+                                <!-- <img class="icon" src="/assets/education.png" alt=""> -->
                                 <h3 class=" m-0 mb-3"><strong>JR Full Stack Developer Trainee</strong></h3>
-                                <img src="../assets/boolean-icon.png" alt="">
+                                <img src="/public/assets/boolean-icon.png" alt="">
                                 <h4 class="boolean">BOOLEAN</h4>
                                 <span>Vedi certificato</span>
                             </div>
@@ -51,48 +51,48 @@
                     <div class="experience-container ps-5">
 
                         <div class="d-flex align-items-center justify-content-center pb-4">
-                            <img class="icon" src="../assets/experience.png" alt="">
+                            <img class="icon" src="/public/assets/experience.png" alt="">
                             <h3 class=" m-0">Experience</h3>
                         </div>
                         <div class="row flex-wrap">
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-html.png" alt="">
+                                <img class="icon" src="/public/assets/icon-html.png" alt="">
                                 <h3 class=" m-0">HTML</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-css.png" alt="">
+                                <img class="icon" src="/public/assets/icon-css.png" alt="">
                                 <h3 class=" m-0">CSS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-sass.png" alt="">
+                                <img class="icon" src="/public/assets/icon-sass.png" alt="">
                                 <h3 class=" m-0">SASS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-bootstrap.png" alt="">
+                                <img class="icon" src="/public/assets/icon-bootstrap.png" alt="">
                                 <h3 class=" m-0">Bootstrap</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-js.png" alt="">
+                                <img class="icon" src="/public/assets/icon-js.png" alt="">
                                 <h3 class=" m-0">JS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-vue.png" alt="">
+                                <img class="icon" src="/public/assets/icon-vue.png" alt="">
                                 <h3 class=" m-0">Vue JS</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-vite.png" alt="">
+                                <img class="icon" src="/public/assets/icon-vite.png" alt="">
                                 <h3 class=" m-0">Vite</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-php.png" alt="">
+                                <img class="icon" src="/public/assets/icon-php.png" alt="">
                                 <h3 class=" m-0">PHP</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-laravel.png" alt="">
+                                <img class="icon" src="/public/assets/icon-laravel.png" alt="">
                                 <h3 class=" m-0">Laravel</h3>
                             </div>
                             <div class="col-4 d-flex align-items-center tech">
-                                <img class="icon" src="../assets/icon-mysql.png" alt="">
+                                <img class="icon" src="/public/assets/icon-mysql.png" alt="">
                                 <h3 class=" m-0">MySQL</h3>
                             </div>
                         </div>
@@ -110,21 +110,21 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="project-container">
-                            <img class="project" src="../assets/boolflix.png" alt="">
+                            <img class="project" src="/public/assets/boolflix.png" alt="">
                             <h3 class="pb-3">Boolflix</h3>
                             <button class="btn"><a href="https://boolflixriva.netlify.app" target="_blank">See project</a></button>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project-container">
-                            <img class="project" src="../assets/phlox.png" alt="">
+                            <img class="project" src="/public/assets/phlox.png" alt="">
                             <h3 class="pb-3">Phlox business</h3>
                             <button class="btn"><a href="https://phloxbusiness.netlify.app/" target="_blank">See project</a></button>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="project-container">
-                            <img class="project" src="../assets/vue-pokedex.png" alt="">
+                            <img class="project" src="/public/assets/vue-pokedex.png" alt="">
                             <h3 class="pb-3">Pokedex</h3>
                             <button class="btn"><a href="https://pokedexriva.netlify.app" target="_blank">See project</a></button>
                         </div>
@@ -141,7 +141,7 @@
             <div class="d-flex justify-content-center">
                 <div class="contact-info-container ">
                     <img
-                        src="../assets/mail.png"
+                        src="/public/assets/mail.png"
                         alt="Email icon"
                         class="contact-icon-mail"
                     />
@@ -150,7 +150,7 @@
                 <div class="contact-info-container ps-5">
                     <a href="https://www.linkedin.com" class="contact-link">
                         <img
-                            src="../assets/linkedin.png"
+                            src="/public/assets/linkedin.png"
                             alt="LinkedIn icon"
                             class="contact-icon"
                         />
