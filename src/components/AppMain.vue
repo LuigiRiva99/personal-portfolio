@@ -13,7 +13,7 @@
                     <button class="btn btn-link"><a href="https://www.linkedin.com/in/luigi-antony-riva/" target="_blank"><img src="/public/assets/linkedin.png"></img></a></button>
                     <button class="btn btn-link"><a href="https://github.com/LuigiRiva99" target="_blank"><img src="/public/assets/github.png"></img></a></button>
                     <button class="btn btn-link">
-                        <a href="/public/LUIGI ANTONY RIVA CV INV.pdf" target="_blank" >
+                        <a href="/LUIGI ANTONY RIVA CV INV.pdf" target="_blank" >
                             <div class="cv-content">
                                 <img src="/public/assets/CV-icon.png" class="cv-icon" alt="CV Icon">
                                 <span class="cv-text">CV</span>
@@ -36,7 +36,7 @@
                         <h3 class=" m-0">Education</h3>
                     </div>
                     <div class="boolean-container d-flex align-items-center">
-                        <a href="/public/assets/certificato-boolean.png" target="_blank">
+                        <a href="/assets/certificato-boolean.png" target="_blank">
                             <div class="d-flex align-items-center justify-content-center flex-column certificate-link">   
                                 <!-- <img class="icon" src="/assets/education.png" alt=""> -->
                                 <h3 class=" m-0 mb-3"><strong>JR Full Stack Developer Trainee</strong></h3>
