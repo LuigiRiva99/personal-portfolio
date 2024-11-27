@@ -138,24 +138,26 @@
     <section class="contacts" id="contacts">
         <div class="text-center">
             <h2 class="mb-5">Contacts</h2>
-            <div class="d-flex justify-content-center">
-                <div class="contact-info-container ">
-                    <img
-                        src="/public/assets/mail.png"
-                        alt="Email icon"
-                        class="contact-icon-mail"
-                    />
-                    <p><a href="mailto:examplemail@gmail.com">luigi.riva.1999@gmail.com</a></p>
-                </div>
-                <div class="contact-info-container ps-5">
-                    <a href="https://www.linkedin.com" class="contact-link">
+            <div class="container">
+                <div class="d-flex justify-content-center ">
+                    <div class="contact-info-container col">
                         <img
-                            src="/public/assets/linkedin.png"
-                            alt="LinkedIn icon"
-                            class="contact-icon"
+                            src="/public/assets/mail.png"
+                            alt="Email icon"
+                            class="contact-icon-mail"
                         />
-                        <p>LinkedIn</p>
-                    </a>
+                        <p><a href="mailto:examplemail@gmail.com">luigi.riva.1999@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-container ps-5 col">
+                        <a href="https://www.linkedin.com" class="contact-link">
+                            <img
+                                src="/public/assets/linkedin.png"
+                                alt="LinkedIn icon"
+                                class="contact-icon"
+                            />
+                            <p>LinkedIn</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
